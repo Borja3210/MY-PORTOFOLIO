@@ -1,5 +1,4 @@
 /* ALL THE PAGE HAVE THE PADDING AND BORDER IN THE ELEMENT TOTAL WIDTH AND HEIGHT */
-*/
 
 * {
   box-sizing: border-box;
@@ -40,27 +39,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:30px 10%
+  padding:30px 10%;
+
 }
 
 .logo{
   cursor: pointer;
 }
 
-
 .links li{
 list-style: none;
 display: inline-block;
 padding: 0px 20px;
 
+
 }
+
 
 .links li a{
   transition: all 0.3s ease 0s;
 }
 
 .links li a:hover{
-  color: orangered
+  color: orangered;
+  text-decoration: underline;
 
 }
 
@@ -78,12 +80,13 @@ button:hover{
   background-color:orangered ;
 
 }
-/* HERO BANNER  WITH A TEXT IN THE MIDDLE, TEXT IS RESPONSIVE */
+/* HERO BANNER  WITH A TEXT IN THE MIDDLE, TEXT IS RESPONSIVE, FIXED IMAGE ONCD YOU SCROLL */
 .hero-banner{
   background-image: url(https://blog.openclassrooms.com/en/wp-content/uploads/sites/4/2018/03/web-develoment.jpg);
   height: 675px;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   position: relative;
 }
@@ -96,6 +99,12 @@ button:hover{
   transform: translate(-50%, -50%);  
   color: white;
 }
+
+.hero-text :hover{
+  color: blueviolet;
+
+}
+
 .hero-banner-text{
   font-weight: 800;
   font-size: xx-large;
@@ -144,53 +153,55 @@ button:hover{
    
  }
 
+ 
+
  .first-row img{
+   width: 47.5%;
+   height: 360px;
+   border-radius: 5%;
+   position:relative;
+   cursor: pointer;
+ }
+
+ .first-row :hover{
+  width:50%;
+  height:375px;
+  opacity: 0.8;
+  box-shadow: 10px 5px 5px lightslategray;
+  
+ }
+
+ .second-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2%;
+  flex-wrap: wrap;
+
+  
+ }
+
+ .second-row img{
   width: 47.5%;
   height: 360px;
+  margin-top: 2.5%;
   border-radius: 5%;
-  position:relative;
   cursor: pointer;
-}
+  
 
-.first-row :hover{
- width:50%;
- height:375px;
- opacity: 0.8;
- box-shadow: 10px 5px 5px lightslategray;
- 
-}
-
-.second-row{
- display: flex;
- align-items: center;
- justify-content: center;
- gap:2%;
- flex-wrap: wrap;
-
- 
-}
-
-.second-row img{
- width: 47.5%;
- height: 360px;
- margin-top: 2.5%;
- border-radius: 5%;
- cursor: pointer;
- 
-
-}
+ }
 
 .second-row :hover{
- width:50%;
- height:375px;
- opacity: 0.8;
- box-shadow: 10px 5px 5px lightslategray;
+  width:50%;
+  height:375px;
+  opacity: 0.8;
+  box-shadow: 10px 5px 5px lightslategray;
 }
 
 .first-text{
- position: absolute;
- bottom: -950px;
- left: 900px;
+  position: absolute;
+  bottom: -950px;
+  left: 900px;
 }
 
 /* THE FOOTER LINKS ARE OPERATIVE */
@@ -216,10 +227,71 @@ button:hover{
 
   .list_footer li :hover{
     color: orangered;
+    text-decoration: underline;
+  }
+  /* TABLET */
+  @media (max-width:820px){
+    
+    
+    .header{
+      flex-direction: column;
+    }
+    .hero-banner{
+      max-width: 820px;
+    }
+    .avatar{
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      margin-bottom: 5% ;
+    }
+    .first-row{
+      flex-direction: column;
+    }
+    .second-row{
+      flex-direction: column ;
+    }
+    .first-row img{
+      width: 350px;
+      margin-bottom: 5%;
+    }
+    .second-row img{
+      width:350px;
+      margin-bottom: 5%;
+    }
+    .first-row :hover{
+      width:377px;
+      height:375px;
+      opacity: 0.8;
+      box-shadow: 10px 5px 5px lightslategray;
+      
+     }
+
+     .second-row :hover{
+      width:377px;
+      height:375px;
+      opacity: 0.8;
+      box-shadow: 10px 5px 5px lightslategray;
+
+     }
+     .list_footer{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+
+       
+     }
+     .list_footer li{
+       margin-bottom: 5%;
+     }
+
+    
+  }
+ /* MOBILE */
+  @media (max-width:420px){.hero-banner{
+    max-width: 420px;
   }
 
-
-
-
-
-
+  }
