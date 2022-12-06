@@ -1,3 +1,4 @@
+
 /* ALL THE PAGE HAVE THE PADDING AND BORDER IN THE ELEMENT TOTAL WIDTH AND HEIGHT */
 
 * {
@@ -138,10 +139,9 @@ button:hover{
    margin-top:100px;
    width: 100%;
    height: auto;
- 
-   }
+ }
 
-   .og-row{
+ .og-row{
    display:flex;
    align-items: center;
    justify-content: center;
@@ -149,25 +149,25 @@ button:hover{
    position:relative ;
    flex-wrap: wrap;
    margin-bottom: 2.5%;
-  
-   }
+ }
 
-  .unique{
+ .unique{
   width: 98%;
   height: 360px;
   border-radius: 5%;
   position:relative;
   cursor: pointer;
 
-  }
+ }
 
-  .og-row :hover{
+ .og-row :hover{
   width:120%;
   height:375px;
   opacity: 0.8;
   box-shadow: 10px 5px 5px lightslategray;
   
  }
+
  
 
  .first-row{
@@ -181,6 +181,7 @@ button:hover{
    
  }
 
+ 
 
  .first-row img{
    width: 47.5%;
@@ -315,10 +316,4 @@ button:hover{
      }
 
     
-  }
- /* MOBILE */
-  @media (max-width:420px){.hero-banner{
-    max-width: 420px;
-  }
-
   }
