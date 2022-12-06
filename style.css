@@ -155,7 +155,7 @@ button:hover{
 
  
 
- .first-row img{
+ .first-row a img{
    width: 47.5%;
    height: 360px;
    border-radius: 5%;
@@ -181,7 +181,7 @@ button:hover{
   
  }
 
- .second-row img{
+ .second-row a img{
   width: 47.5%;
   height: 360px;
   margin-top: 2.5%;
