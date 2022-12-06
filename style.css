@@ -1,4 +1,3 @@
-
 /* ALL THE PAGE HAVE THE PADDING AND BORDER IN THE ELEMENT TOTAL WIDTH AND HEIGHT */
 
 * {
@@ -275,12 +274,32 @@ button:hover{
       width: 50%;
       margin-bottom: 5% ;
     }
+    .og-row{
+      flex-direction:column;
+    }
+
     .first-row{
       flex-direction: column;
     }
+
     .second-row{
       flex-direction: column ;
     }
+
+    .unique{
+      width: 350px;
+      margin-bottom: 5%;
+
+    }
+     
+    .og-row :hover {
+      width:377px;
+      height:375px;
+      opacity: 0.8;
+      box-shadow: 10px 5px 5px lightslategray;
+      
+    }
+
     .first-row img{
       width: 350px;
       margin-bottom: 5%;
