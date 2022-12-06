@@ -24,6 +24,8 @@ Press Work after that clicking on the images will bring you to my actual project
 
 https://borja3210.github.io/my-portofolio/
 
+Also once you click the link of ther navbar and footer will bring you to differents parts of the website in the case of the navbar and to different sites in the case of the footer
+
 
 
 ## Credits
